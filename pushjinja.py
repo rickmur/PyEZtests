@@ -44,8 +44,6 @@ try:
     else:
         print 'whoops'
 
-    dev.close()
-
 except ConnectAuthError:
     print 'Credentials invalid!'
 except ConfigLoadError as e:
@@ -56,4 +54,5 @@ except RpcTimeoutError as e:
     print 'Config committed, but RPC timed out: ', e
 except Exception as e:
     print 'something went wrong: ', e
-
+finally:
+    dev.close()
