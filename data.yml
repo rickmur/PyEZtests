@@ -1,0 +1,11 @@
+---
+interfaces:
+  - lo0
+  - xe-0/0/1
+  - xe-0/0/0
+
+description1:
+  - Configured with jinja first one
+
+description2:
+  - configured with other jinja var
