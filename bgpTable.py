@@ -25,7 +25,7 @@ for switch in myVars["switches"]:
             initiate = "locally"
             if peer[1] != "179":
                 initiate = "by peer"
-            print ("Neighbor " + peer[0] + " is AS " + neighbor.peer_as + " state is: " + neighbor.state + " session was initiated " + initiate)
+            print ("Neighbor " + peer[0] + " is AS " + neighbor.peer_as + "state is: " + neighbor.state + " session was initiated " + initiate)
     else:
         print ("No neighbors")
 
